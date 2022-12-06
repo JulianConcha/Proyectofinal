@@ -1,0 +1,776 @@
+:root {
+  --azulprincipal: #01a2fd;
+  --gris: #303133;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+.ancho {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.principal {
+  background-color: var(--gris);
+}
+.informaciones {
+  display: flex;
+  justify-content: space-between;
+}
+
+.informacion_dia {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.informacion_dia i {
+  margin-right: 10px;
+}
+.informacion_dia p {
+  margin-right: 10px;
+}
+
+.tamano2 {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+/* header */
+.barras {
+  background-color: white;
+  text-decoration: none;
+  color: var(--azulprincipal);
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+  font-size: 30px;
+}
+
+
+.informacion_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.informacion_header figure {
+  margin: 10px 0px 10px 0px;
+}
+
+.barra_mq figure{
+  margin: 0;
+}
+
+.barra_mq figure img{
+  margin: 0;
+}
+nav i {
+  margin-left: 15px;
+  color: var(--azulprincipal);
+  border-radius: 50%;
+  padding: 8px;
+  background-color: #a8d5f0;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  margin-left: 15px;
+}
+.informacion_nav {
+  display: flex;
+  align-items: center;
+}
+
+.informacion_nav i {
+  margin-right: 10px;
+  color: var(--azulprincipal);
+}
+
+.informacion_nav span {
+  color: var(--azulprincipal);
+}
+/* seccion de los banner */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  max-height: 550px;
+  
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+}
+
+
+.callbacks_container {
+  position: relative;
+  margin: auto;
+}
+.callbacks_container img {
+  height: 500px;
+  object-fit: cover;
+}
+.callbacks_container ul {
+  margin: 0px;
+}
+
+.caption {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  font-size: 28px;
+  text-shadow: 0px 0px 10px #333;
+  color: #fff;
+  left: 30%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  width: 250px;
+  background-color: white;
+  color: var(--azulprincipal);
+  padding: 15px;
+  
+}
+
+.caption2 {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  font-size: 28px;
+  text-shadow: 0px 0px 10px #333;
+  color: #fff;
+  left: 37%;
+  top: 67%;
+  transform: translate(-50%, -50%);
+  background-color: var(--azulprincipal);
+  border-radius: 10px;
+  width: 230px;
+  text-decoration: none;
+  transition: all .5s;
+  padding: 5px;
+  
+}
+.caption3 {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  font-size: 28px;
+  text-shadow: 0px 0px 10px #333;
+  color: #fff;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  width: 350px;
+  background: rgb(1,162,253);
+  background: linear-gradient(90deg, rgba(1,162,253,1) 0%, rgba(11,0,36,0.1741071428571429) 100%, rgba(42,0,255,1) 100%);
+  color: white;
+  border-radius: 8px;
+}
+
+
+
+
+.callbacks_nav {
+  position: absolute;
+  top: 52%;
+  left: 0;
+  opacity: 1;
+  z-index: 5;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 50px;
+  width: 30px;
+  background: transparent url("../img/flechas.png") no-repeat left top;
+  margin-top: -20px;
+}
+.callbacks_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 0;
+}
+/* seccion de los primeros articles */
+.seccion_articles {
+  text-align: center;
+  height: 550px;
+}
+
+.centrar_article {
+  display: flex;
+  justify-content: space-between;
+}
+.servicios_article {
+  max-width: 380px;
+  height: 400px;
+  text-align: center;
+  align-items: center;
+  border: 1px rgb(201, 200, 200) solid;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: all .5s;
+}
+
+.servicios_article:hover {
+background-color: var(--azulprincipal);
+color: white;
+border-radius: 15px;
+}
+.servicios_article p:hover
+.seccion_articles p {
+  color: gray;
+}
+.icono_art {
+  font-size: 40px;
+  border-radius: 50%;
+  padding: 40px;
+  background-color: var(--azulprincipal);
+  margin-top: 50px;
+  color: white;
+}
+
+.flecha_mas {
+  padding: 5px;
+  background-color: #e2e8ec;
+  width: 45px;
+  color: var(--azulprincipal);
+}
+
+.btn_service {
+  text-decoration: none;
+  padding: 15px;
+  background-color: var(--azulprincipal);
+  color: white;
+}
+
+.centrar_service {
+  text-align: center;
+}
+/* seccion del modal */
+#contenedoryoutube {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%; /*nos da la proporcion de 16X9*/
+  position: relative;
+  display: none;
+}
+#contenedoryoutube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* informacion del chooose */
+.choose{
+  background-color: #F0F3F8;
+  margin-top: 100px;
+  height: 600px;
+}
+
+.informacion_choose{
+  max-width: 350px;
+  border-bottom: 5px var(--azulprincipal) solid;
+  text-align: start;
+  background-color: white;
+  transition: all .5s;
+}
+
+.informacion_choose:hover{
+  background-color: var(--azulprincipal);
+  color: white;
+  border-radius: 15px;
+}
+.informacion_choose h2{
+padding-top: 15px;
+}
+
+.centrar_service p{
+  padding-top: 20px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* seccion de fotos */
+
+.grid2{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.projects{
+  text-align: center;
+}
+
+.grid2 figure {
+  filter: blur(2px);
+  transition: all .5s;
+}
+
+.grid2 figure:hover{
+    filter: blur(0px);
+}
+
+/* seccion del team */
+.project{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.team_article{
+  max-width: 280px;
+}
+.team_article:hover{
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  background-color: var(--azulprincipal);
+color: white;
+}
+
+.team_article figure{
+  max-width: 260px;
+}
+
+.team_article figure img{
+  width: 100%;
+}
+.filtro{
+filter: grayscale();
+margin: 0;
+transition: all .5s;
+}
+
+.filtro:hover{
+  filter: none;
+  }
+
+/* seccion del slider de fotos */
+.blog_efecto img{
+  clip-path: circle(50% at 50% 50%);
+  
+}
+
+/* footer */
+footer{
+  background-color: var(--gris);
+  padding: 10px;
+  color: white;
+}
+.footer_final{
+  text-align: center;
+  max-width: 350px;
+}
+
+.iconos_footer{
+  font-size: 35px;
+}
+
+/* ---------seccion de la hoja mision------------------ */
+
+.parrallas{
+  background-image: url(../img/foto_parallaxs.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.parrallas::before{
+  content: "";
+  width: 100%;
+  height: 350px;
+  background: rgb(1,162,253);
+background: linear-gradient(90deg, rgba(1,162,253,1) 8%, rgba(11,0,36,0.1741071428571429) 100%, rgba(42,0,255,1) 100%);
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+}
+
+.info2{
+  position: absolute;
+  z-index: 4;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* para centrar un position*/
+} 
+
+/* seccion de preguntas */
+
+.informacion {
+  display: flex;
+  justify-content: space-around;
+}
+.preguntas {
+  max-width: 500px;
+}
+.preguntas_section {
+  display: flex;
+  align-items: center;
+}
+.preguntas_section i {
+  margin: 10px;
+  color: var(--azulprincipal);
+}
+
+.preguntas_section h2 {
+  font-size: 18px;
+}
+
+#pregunta1, #pregunta2, #pregunta3, #pregunta4{
+  display: none;
+}
+
+/* parte del formulario */
+
+.formulario{
+  margin: 50px 0px 50px 0px;
+}
+
+.modal{
+  display: nne;
+  padding: 100px 10px;
+position: fixed;
+z-index: 10;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+/* overflow: auto; */
+transition: all 0.5s;
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+.cerrarmodal{
+ 
+  z-index: 11;
+  color: black;
+  cursor: pointer;
+}
+
+.btn_transparente{
+ 
+  text-align: right;
+}
+.informacion_modal{
+  border: 3px var(--azulprincipal) solid;
+  height: 550px;
+  max-width: 500px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.64);
+-moz-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.64);
+box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.64);
+
+}
+
+.informacion_modal h3{
+  border: 1px black solid;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.btn_azul {
+  width: 160px;
+  padding: 13px;
+  border-radius: 50px;
+  background-color: white;
+  color: var(--azulprincipal);
+  
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  border: 2px var(--azulprincipal) solid;
+}
+
+.btn_azul:hover{
+  background-color: var(--azulprincipal);
+  color: white;
+}
+
+/* css de team */
+
+/* fancy */
+.fancy_fotos {
+  text-align: center;
+}
+
+.fancy_fotos hr {
+  width: 100px;
+  height: 5px;
+  background-color: gray;
+}
+#galeria {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: all 1s;
+}
+#galeria a {
+  filter: brightness(60%);
+}
+#galeria a:hover {
+  filter: brightness(100%);
+  transition: all 0.5s;
+}
+#galeria img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  transition: all 3s;
+}
+
+#galeria img:hover{
+  clip-path: circle(50% at 50% 50%);
+}
+
+/* seccion de las paginas de desarrollo */
+
+.team_completo{
+  margin-bottom: 30px;
+}
+.proyectos{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.proyectos_informacion{
+  text-align: center;
+  filter: blur(2px);
+  transition: all .5s;
+}
+
+.proyectos_informacion:hover{
+  filter: blur(0px);
+  
+}
+.proyectos_informacion i{
+  font-size: 30px;
+  color: var(--azulprincipal);
+}
+
+.proyectos .teams{
+  transition: all .5s;
+}
+.proyectos .teams:hover{
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+ .amazon{
+  display: flex;
+  justify-content: space-around;
+ }
+
+
+
+ .amazon img {
+  border-radius: 7px;
+ }
+
+ /* flecha subir */
+ .arriba {
+  position: fixed;
+  z-index: 10;
+  right: 20px;
+  bottom: 20px;
+  font-size: 35px;
+  color: var(--azulprincipal);
+}
+
+/* media queries */
+
+@media screen and (max-width: 390px){
+  .principal{
+    display: none;
+  }
+
+  .barras {
+    display: block;
+  }
+
+ .informacion_header{
+  display: flex;
+  flex-direction: column;
+  
+  
+ }
+
+ .barra_mq{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+  
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  display: none;
+  background-color: var(--azulprincipal);
+  padding: 10px;
+  width: 340px;
+}
+
+nav a {
+  padding-bottom: 10px;
+  display: block;
+  color: white;
+}
+
+  nav .lupa{
+    display: none;
+  }
+
+  .informacion_nav{
+    display: none;
+  }
+
+  .centrar_article{
+    display: inline-block;
+    background-color: var(--azulprincipal);
+color: white;
+border-radius: 15px;
+    
+  }
+  
+
+  .choose{
+  display: none;  
+  }
+
+  .btn_service{
+    display: none;
+  }
+
+  .grid2{
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 750px;
+    
+  }
+
+  .grid2 figure{
+    margin: 0;
+    filter: blur(0px);
+  }
+
+  .project{
+    display: inline-block;
+  }
+
+  .projects h2{
+    display: none;
+  }
+
+  .team_article{
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    background-color: var(--azulprincipal);
+  color: white;
+  filter: none;
+  }
+/* seccion de la mision */
+  .formulario{
+    margin: 15px;
+  }
+
+  .btn_azul{
+    width: 100%;
+    background-color: var(--azulprincipal);
+    color: white;
+  }
+  #galeria{
+    display: inline-block;
+  }
+
+  #galeria img{
+    clip-path: circle(50% at 50% 50%);
+    margin-top: 20px;
+   
+  }
+
+  #galeria a{
+    filter: brightness(100%);
+  }
+
+  /* seccion del team */
+  .proyectos{
+    display: inline-block;
+  }
+
+  .amazon{
+    display: inline-block;
+  }
+
+  .amazon {
+    max-width: 300px;
+  }
+
+  .amazon img{
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .reverse{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .proyectos_informacion{
+    filter: blur(0px);
+  }
+
+  .proyectos .teams{
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+}

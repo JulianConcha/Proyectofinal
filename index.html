@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/2ee0245f3d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tinycarousel.js"></script>
+    <link rel="stylesheet" href="tinycarousel.css" type="text/css" media="screen"/>
+    
+
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+      $(function () {
+        $("#slider4").responsiveSlides({
+          auto: false,
+          pager: false,
+          nav: true,
+          speed: 500,
+          namespace: "callbacks",
+          before: function () {
+            $('.events').append("<li>before event fired.</li>");
+          },
+          after: function () {
+            $('.events').append("<li>after event fired.</li>");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <i class="arriba fa-solid fa-circle-up"></i>
+    <div class="principal">
+      <div class="informaciones ancho">
+        <div class="informacion_dia">
+          <i class="fa-solid fa-clock"></i>
+          <p>Mon-Fri:09.00 am-06.pm</p>
+        </div>
+
+        <aside class="tamano2">
+          <div class="informacion_dia">
+            <i class="fa-solid fa-phone-volume"></i>
+            <p>Call-Us+880 320 432 242</p>
+          </div>
+
+          <div class="informacion_dia">
+            <i class="fa-solid fa-envelope-open-text"></i>
+            <p>email-us</p>
+          </div>
+
+          <div class="informacion_dia">
+            <i class="fa-solid fa-flag-usa"></i>
+            <p>ENGLISH</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <header>
+    <div class="informacion_header ancho">
+      <div class="barra_mq">
+        <a href="index.html">
+          <figure>
+          <img src="img/logo.png" alt="" />
+        </figure></a>
+        <li id="icono" class="barras">
+          <i class="fa-solid fa-bars"></i>
+        </li>
+      </div>
+        
+      
+        <nav id="caja">
+          <a href="index.html">Home +</a>
+          <a href="mision.html">Mision +</a>
+          <a href="team.html">Pages +</a>
+          <a href="#">Shop +</a>
+          <a href="#">News +</a>
+          <a href="#">About Us +</a>
+          <i class="lupa fa-solid fa-magnifying-glass"></i>
+        </nav>
+      
+
+        <div class="informacion_nav">
+          <i class="fa-solid fa-message"></i>
+          <p>
+            Do you need help? <br />
+            <span>CONTACT ME</span>
+          </p>
+        </div>
+    </div>
+    </header>
+    <!-- seccion del banner -->
+    <div class="callbacks_container">
+      <ul class="rslides" id="slider4">
+        <li>
+          <img src="img/banner.jpg" alt="">
+          <p class="caption">El mejor diseño web</p>
+        </li>
+        <li>
+          <img src="img/banner2.jpg" alt="">
+          <p  class="caption">Diseñador Julian Concha</p>
+        </li>
+      </ul>
+    </div>
+
+    <a id="btn_id" class="caption2" href="">Más informacion</a>
+
+    <!-- seccion del modal -->
+      
+    <!-- <article class="modal" id="modal_id" id="contenedoryoutube">
+      <div class="btn_transparente">
+        <i id="cerrarbtn" class="cerrarmodal fas fa-times-circle"></i>
+    </div>
+      <div  id="contenedoryoutube">
+        <iframe
+          src="https://www.youtube.com/embed/PNUihxJarAM"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </article> -->
+    
+    <!-- seccion de los primeros articles -->
+    <section class="seccion_articles">
+      <p>WHATE WE SERVE</p>
+      <h2>Our Service</h2>
+      <div class="centrar_article ancho">
+        <article class="wow animate__animated  animate__rotateInDownLeft servicios_article">
+          <i class="icono_art fa-solid fa-user-astronaut"></i>
+          <h2>Android Apps Dev</h2>
+          <p>
+            Distinctively communicate world class excellent content and
+            ubiquitous tec Appropriately architect reliable scenarios tactical
+            results. Proactively
+          </p>
+          <i class="flecha_mas fa-solid fa-arrow-right"></i>
+        </article>
+
+        <article class="wow animate__animated animate__rotateIn servicios_article">
+          <i class="icono_art fa-solid fa-laptop"></i>
+          <h2>Product Strategy</h2>
+          <p>
+            Distinctively communicate world class excellent content and
+            ubiquitous tec Appropriately architect reliable scenarios tactical
+            results. Proactively
+          </p>
+          <i class="flecha_mas fa-solid fa-arrow-right"></i>
+        </article>
+
+        <article class="wow animate__animated  animate__rotateInDownRight servicios_article">
+          <i class="icono_art fa-solid fa-book"></i>
+          <h2>Firewall Advancement</h2>
+          <p>
+            Distinctively communicate world class excellent content and
+            ubiquitous tec Appropriately architect reliable scenarios tactical
+            results. Proactively
+          </p>
+          <i class="flecha_mas fa-solid fa-arrow-right"></i>
+        </article>
+      </div>
+    </section>
+    <div class="centrar_service">
+      <a class="btn_service" href="">VIEW ALL SERVICE</a>
+    </div>
+    <!-- seccion chouse -->
+    <section class="centrar_service choose">
+      <p>SOME REASON</p>
+      <h2>Why Choose Us</h2>
+      <div class="ancho">
+        <aside class="grid">
+          <article class="wow animate__animated animate__backInLeft informacion_choose">
+            <h2>
+              High Quality <br />
+              Services
+            </h2>
+            <p>
+              Uniquely reinvent open-source users highly niches. Intrinsicly
+              optimal solutions highly efficient niches.
+            </p>
+          </article>
+
+          <article class="wow animate__animated animate__backInDown informacion_choose">
+            <h2>
+              24/7 Dedicated <br />
+              Support
+            </h2>
+            <p>
+              Uniquely reinvent open-source users highly niches. Intrinsicly
+              optimal solutions highly efficient niches.
+            </p>
+          </article>
+
+          <article class="wow animate__animated animate__backInRight informacion_choose">
+            <h2>
+              Lifetime Free <br />
+              Support
+            </h2>
+            <p>
+              Uniquely reinvent open-source users highly niches. Intrinsicly
+              optimal solutions highly efficient niches.
+            </p>
+          </article>
+
+          <article class="wow animate__animated animate__backInLeft informacion_choose">
+            <h2>
+              Download Some <br />
+              Free Apps
+            </h2>
+            <p>
+              Uniquely reinvent open-source users highly niches. Intrinsicly
+              optimal solutions highly efficient niches.
+            </p>
+          </article>
+
+          <article class="wow animate__animated animate__backInUp informacion_choose">
+            <h2>
+              Communication <br />
+              System
+            </h2>
+            <p>
+              Uniquely reinvent open-source users highly niches. Intrinsicly
+              optimal solutions highly efficient niches.
+            </p>
+          </article>
+
+          <article class="wow animate__animated animate__backInRight informacion_choose">
+            <h2>
+              High Quality <br />
+              Software
+            </h2>
+            <p>
+              Uniquely reinvent open-source users highly niches. Intrinsicly
+              optimal solutions highly efficient niches.
+            </p>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2>Latest Projects</h2>
+      <div class="grid2 ancho">
+        <figure class="wow animate__animated animate__backInDown">
+          <img src="img/foto1.png" alt="" />
+        </figure>
+
+        <figure class="wow animate__animated animate__backInDown">
+          <img src="img/foto4.jpg" alt="" />
+        </figure>
+
+        <figure class="wow animate__animated animate__backInDown">
+          <img src="img/foto5.jpg" alt="" />
+        </figure>
+
+        <figure class="wow animate__animated animate__backInDown">
+          <img src="img/foto1.png" alt="" />
+        </figure>
+
+        <figure class="wow animate__animated animate__backInDown">
+          <img src="img/foto4.jpg" alt="" />
+        </figure>
+
+        <figure class="wow animate__animated animate__backInDown">
+          <img src="img/foto5.jpg" alt="" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- seccion del team -->
+
+    <section class="projects">
+      <h2>Meet Our Team</h2>
+      <div class="project ancho">
+        <article class="wow animate__animated animate__bounceInLeft team_article filtro">
+          <figure class="">
+            <img src="img/team1.jpg" alt="">
+          </figure>
+          <h2>Maya Poe</h2>
+          <p>Software Developer</p>
+        </article>
+
+        <article class="wow animate__animated animate__bounceInLeft team_article filtro">
+          <figure class="">
+            <img src="img/team2.jpg" alt="">
+          </figure>
+          <h2>Anjelina M
+            </h2>
+          <p>Software Developer</p>
+        </article>
+
+        <article class="wow animate__animated animate__bounceInLeft team_article filtro">
+          <figure class="">
+            <img src="img/team3.jpg" alt="">
+          </figure>
+          <h2>John Doe</h2>
+          <p>Software Developer</p>
+        </article>
+
+        <article class="wow animate__animated animate__bounceInLeft team_article filtro">
+          <figure class="">
+            <img src="img/team4.jpg" alt="">
+          </figure>
+          <h2>D Marcos</h2>
+          <p>Software Developer</p>
+        </article>
+      </div>
+    </section>
+
+<!-- seccion del slide -->
+
+    <div id="slider1">
+      <a class="buttons prev" href="#"><i class="fa-solid fa-circle-arrow-left"></i></a>
+      <div class="viewport">
+        <ul class="overview">
+          <li class="blog_efecto"><img src="img/blog1.jpg" />
+          <h4> Fecha: 02 / dic / 2022</h4>
+          <h2>Blog 1</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae repudiandae ratione cupiditate corporis, quidem, necessitatibus dignissimos, ullam id illum ducimus tempora eaque iure illo sequi explicabo suscipit aspernatur facere! Architecto.</p>
+          </li>
+          <li class="blog_efecto"><img src="img/blog2.jpg" />
+            <h4> Fecha: 02 / dic / 2022</h4>
+            <h2>Blog 2</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae repudiandae ratione cupiditate corporis, quidem, necessitatibus dignissimos, ullam id illum ducimus tempora eaque iure illo sequi explicabo suscipit aspernatur facere! Architecto.</p></li>
+          <li class="blog_efecto"><img src="img/blog3.jpg" />
+            <h4> Fecha: 02 / dic / 2022</h4>
+            <h2>Blog 3</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae repudiandae ratione cupiditate corporis, quidem, necessitatibus dignissimos, ullam id illum ducimus tempora eaque iure illo sequi explicabo suscipit aspernatur facere! Architecto.</p></li>
+          <li class="blog_efecto"><img src="img/blog2.jpg" />
+            <h4> Fecha: 02 / dic / 2022</h4>
+            <h2>Blog 4</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae repudiandae ratione cupiditate corporis, quidem, necessitatibus dignissimos, ullam id illum ducimus tempora eaque iure illo sequi explicabo suscipit aspernatur facere! Architecto.</p></li>
+          <li class="blog_efecto"><img src="img/blog3.jpg" />
+            <h4> Fecha: 02 / dic / 2022</h4>
+            <h2>Blog 5</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae repudiandae ratione cupiditate corporis, quidem, necessitatibus dignissimos, ullam id illum ducimus tempora eaque iure illo sequi explicabo suscipit aspernatur facere! Architecto.</p></li>
+          
+        </ul>
+      </div>
+      <a class="buttons next" href="#"><i class="fa-solid fa-circle-arrow-right"></i></a>
+    </div>
+
+    <footer>
+      <div class="ancho footer_final">
+        <figure>
+          <img src="img/logo.png" alt="">
+        </figure>
+        <p>Our company has been developing high-quality and reliable software for corporate needs since 2008. We are renowned professionals of software development.</p>
+        <div class="iconos_footer">
+          <i class="fa-brands fa-facebook"></i>
+          
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-pinterest"></i>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- scripts  -->
+    <script>
+      $("#icono").click(function () {
+        $("#caja").slideToggle();
+      });
+    </script>
+    
+    <script>
+      var btn_modal = document.getElementById("btn_id");
+      var modal = document.getElementById("contenedoryoutube");
+      var cerrar = document.getElementById("cerrarbtn");
+
+      function tiempo() {
+      modal.style.display = "block";
+    };
+    setTimeout(tiempo, 3000);
+    btn_modal.onclick = function () {
+      modal.style.display = "block";
+    };
+    cerrar.onclick = function () {
+      modal.style.display = "none";
+    };
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function()
+      {
+        $('#slider1').tinycarousel();
+      });
+    </script>
+
+<script>
+  new WOW().init();
+</script>
+
+<script>
+  $(document).ready(function(){
+$('.arriba').click(function(){
+  $('body, html').animate({
+      scrollTop: '0px'
+  }, 1000);
+});
+});
+</script>
+  </body>
+</html>
